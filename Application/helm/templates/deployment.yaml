@@ -23,7 +23,7 @@ spec:
       containers:
         - resources: {}
           volumeMounts:
-            - name: index-html
+          - name: index-html
             mountPath: /tmp/html # this will mount the html.index file to it application location
           terminationMessagePath: /dev/termination-log
           name: {{ .Release.Name }}
