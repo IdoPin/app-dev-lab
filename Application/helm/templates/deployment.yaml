@@ -24,7 +24,7 @@ spec:
         - resources: {}
           volumeMounts:
           - name: index-html
-            mountPath: {{ .Values.volume.mount.path }} # this will mount the html.index file to it application location
+            mountPath: /tmp/html # this will mount the html.index file to it application location
           readinessProbe:
             {{- tpl (toYaml .Values.Probes.readiness) . | nindent 12 }}
           livenessProbe:
