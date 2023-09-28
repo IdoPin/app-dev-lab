@@ -10,14 +10,14 @@ spec:
   selector:
     matchLabels: 
 # set your lab user name
-      app: {{ .Release.Name }}-2
+      app2: {{ .Release.Name }}-2
   template:
     metadata:
       Annotations:
         checksum/config: {{ include (print $.Template.BasePath "/ConfigMap.yaml") . | sha256sum }}
       labels:
 # set your lab user name
-        app: {{ .Release.Name }}
+        app2: {{ .Release.Name }}
     spec:
       volumes:
         - name: index-html
