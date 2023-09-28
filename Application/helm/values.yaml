@@ -34,8 +34,8 @@ volume:
   mount:
     path: /tmp/html
 
-test: Healthy
-# test: Null
+# test: Healthy
+test: Null
 
 github:
   user: IdoPin # Your GitHub User name
