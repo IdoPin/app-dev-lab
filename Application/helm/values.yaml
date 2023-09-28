@@ -33,3 +33,5 @@ probes:
 volume:
   mount:
     path: /tmp/html
+
+test: Healthy
