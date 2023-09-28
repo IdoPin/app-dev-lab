@@ -34,4 +34,10 @@ volume:
   mount:
     path: /tmp/html
 
-test: Null #Healthy
+test: Healthy
+# test: Null
+
+github:
+  user: IdoPin # Your GitHub User name
+  token: 
+  url: https://api.github.com/repos/IdoPin/app-dev-lab/issues
