@@ -39,5 +39,5 @@ test: Healthy
 
 github:
   user: IdoPin # Your GitHub User name
-  token: 
+  token: empty-pass
   url: https://api.github.com/repos/IdoPin/app-dev-lab/issues
